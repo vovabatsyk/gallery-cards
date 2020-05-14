@@ -35,6 +35,7 @@ init()
 cover.addEventListener('click', (event) => {
   if (event.target.classList.contains('card')) {
     event.target.classList.add('go')
+    event.target.remove()
     count--
   }
   if (count == 0) {
